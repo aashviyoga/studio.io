@@ -98,7 +98,7 @@
         }
         .gallery img {
             width: 100%;
-            height: auto;
+            height: 200px; /* Fixed height for portrait images */
             object-fit: cover;
             border-radius: 5px;
             transition: transform 0.3s ease;
@@ -269,7 +269,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
             .gallery img {
-                height: auto;
+                height: 150px; /* Adjusted height for smaller devices */
             }
             .profile-photo {
                 width: 80px;
@@ -283,6 +283,13 @@
             }
             #home .section {
                 margin-top: 100px;
+            }
+        }
+
+        /* Media Queries for iPhone Mini 13 */
+        @media (max-width: 375px) {
+            .gallery img {
+                height: 120px; /* Further adjusted height for iPhone Mini 13 */
             }
         }
     </style>
@@ -323,7 +330,7 @@
         <img src="sun.png" alt="Yoga Practicing in Hills with Sun">
         <div class="section">
             <h2>Welcome to Aashvi Yoga Studio</h2>
-            <p>Your journey to inner peace begins here.</p>
+            <p>Your Journey To Inner Peace Begins Here.</p>
         </div>
     </div>
     <div id="about" class="container">
