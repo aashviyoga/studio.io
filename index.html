@@ -37,6 +37,7 @@
             padding: 8px 0;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap; /* Allow nav items to wrap */
             position: fixed;
             width: 100%;
             top: 60px;
@@ -44,7 +45,7 @@
         }
         nav a {
             color: white;
-            margin: 0 5px;
+            margin: 5px; /* Adjusted margin for smaller screens */
             text-decoration: none;
             font-size: 0.9em;
             padding: 5px 8px;
@@ -256,7 +257,7 @@
             nav a {
                 font-size: 0.8em;
                 padding: 4px 6px;
-                margin: 0 3px;
+                margin: 3px; /* Adjusted margin for smaller screens */
             }
             .container {
                 padding: 10px;
@@ -293,8 +294,13 @@
             }
         }
 
-        /* Media Queries for iPhone Mini 13 */
+        /* Media Queries for iPhone Mini 13 and similar small devices */
         @media (max-width: 375px) {
+            nav a {
+                font-size: 0.7em; /* Further reduced font size for very small screens */
+                padding: 3px 5px; /* Further reduced padding */
+                margin: 2px; /* Further reduced margin */
+            }
             .gallery img {
                 height: 120px; /* Further adjusted height for iPhone Mini 13 */
             }
@@ -330,11 +336,11 @@
     </header>
     <nav>
         <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('about')">About Us</a>
         <a href="#" onclick="showSection('gallery')">Gallery</a>
         <a href="#" onclick="showSection('training')">Training Hours</a>
         <a href="#" onclick="showSection('certifications')">Certifications</a>
-        <a href="#" onclick="showSection('contact')">Contact</a>
+        <a href="#" onclick="showSection('contact')">Contact Us</a>
     </nav>
     <div id="home" class="container active">
         <img src="sun.png" alt="Yoga Practicing in Hills with Sun">
@@ -391,7 +397,7 @@
     </div>
     <div id="contact" class="container">
         <div class="section contact">
-            <h2>Contact </h2>
+            <h2>Contact Us</h2>
             <p><strong>Aishwarya Vinoy</strong> (Govt. of Kerala Certified Yoga Instructor)</p>
             <p>📞 <a href="tel:+918590431119">+91 8590431119</a></p>
             <p>✉️ <a href="mailto:aishwaryavinoy2002@gmail.com">aishwaryavinoy2002@gmail.com</a></p>
